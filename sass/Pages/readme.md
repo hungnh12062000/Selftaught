@@ -1,0 +1,1 @@
+(chứa tên các page nếu project web của bạn có nhiều page khác nhau vd: home, login, …)

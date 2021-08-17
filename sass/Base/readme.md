@@ -1,0 +1,1 @@
+Chứa các setting ban đầu, reset
