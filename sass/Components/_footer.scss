@@ -11,6 +11,11 @@
         justify-content: center; 
         align-items: center;      
     }
+    @include respond(pc){
+        display: flex;
+        justify-content: center; 
+        align-items: center;      
+    }
 }
 
 .footer{
@@ -65,6 +70,12 @@
             text-align: justify;
         
         }
+        @include respond(pc){
+            width: 90%;
+            margin: 0 auto;
+            text-align: justify;
+        
+        }
 
     }
     
@@ -73,12 +84,20 @@
         padding-top: 2rem;
         display: inline-block;
         margin-bottom: 2rem;
+        @include respond(pc){
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            margin-left: 2rem;
+        
+        }
         
     }
-
+    
     &__list{
         list-style: none;
         padding: 0;
+        
     }
 
     &__item{

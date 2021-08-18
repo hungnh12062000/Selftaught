@@ -30,6 +30,24 @@
             box-shadow: 0 2.5rem 4rem rgba($color: $color-black, $alpha: .5);
             
         }        
+
+        @include respond(pc){
+            &--p1{
+                left: -5rem;
+                top: -2rem;
+            }
+            
+            &--p2{
+                right: 15rem;
+                top: 3rem;
+            }
+    
+            &--p3{
+                left: 10%;
+                top: 13rem;
+            }
+
+        }
     }
 
     &:hover &__photo:not(:hover){

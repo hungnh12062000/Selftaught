@@ -29,6 +29,12 @@
             top: 6rem;
             right: 6rem;
         }
+        @include respond(pc) {
+            height: 7rem;
+            width: 7rem;
+            top: 7rem;
+            right: 14rem;
+        }
     }
 
     &__background {
@@ -52,6 +58,12 @@
             width: 2rem;
             top: 6.5rem;
             right: 6.5rem;
+        }
+        @include respond(pc) {
+            height: 4rem;
+            width: 4rem;
+            top: 9rem;
+            right: 15rem;
         }
     }
 
@@ -148,7 +160,7 @@
         }
 
         @include respond(phone) {
-            &{
+            & {
                 margin-top: 2.55rem;
             }
             &,

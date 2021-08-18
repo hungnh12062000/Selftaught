@@ -12,5 +12,8 @@
     @if $breakpoint == tab-port {
         @media (min-width:740px)  and (max-width:1023px){@content};
     }
+    @if $breakpoint == pc {
+        @media (min-width:1024px){@content};
+    }
     
 }
