@@ -36,4 +36,9 @@
         transform: scale(.9);
         
     }
+
+    @include respond(phone){
+        display: none;
+
+    }
 }

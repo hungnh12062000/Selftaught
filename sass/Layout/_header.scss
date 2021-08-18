@@ -9,10 +9,20 @@
 
     clip-path: ellipse(65% 60% at 50% 32%);
 
+    @include respond(phone){
+        clip-path: ellipse(70% 55% at 50% 32%);
+        
+    }
+
     &-logo {
         position: absolute;
         top: 30px;
         left: 30px;
+
+        @include respond(phone){
+            top: 1rem;
+            left: .5rem;
+        }
 
         .logo {
             height: 70px;

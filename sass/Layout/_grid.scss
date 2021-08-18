@@ -11,7 +11,16 @@
 
 .row {
     display: flex;
-    // flex-wrap: wrap;
+    
+    @include respond(tab-port){
+        flex-wrap: wrap;
+        margin-bottom: 5rem;
+    }
+    @include respond(phone){
+        flex-wrap: wrap;
+        margin-bottom: 5rem;
+    }
+
     margin-left: -4px;
     margin-right: -4px;
 }
@@ -24,6 +33,26 @@
 .col {
     padding-left: 4px;
     padding-right: 4px;
+}
+
+.col-about{
+    @include respond(phone){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 2rem;
+        text-align: justify;
+    }
+    @include respond(tab-port){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 2rem;
+        text-align: justify;
+    }
+
 }
 
 .row.no-gutters .col {

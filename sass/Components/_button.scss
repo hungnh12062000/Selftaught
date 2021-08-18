@@ -9,6 +9,13 @@
         display: inline-block;
 
         position: relative;
+        @include respond(phone){
+            padding: 10px 30px;
+        }
+        @include respond(tab-port){
+            padding: 15px 40px;
+
+        }
     }
 
     &:hover {
@@ -88,5 +95,9 @@
         transform: translateY(0);
     }
     transition: all 0.2s;
+
+    @include respond(phone){
+        margin: 0 auto;
+    }
 }
 

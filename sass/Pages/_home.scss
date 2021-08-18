@@ -10,12 +10,17 @@
     clip-path: ellipse(70% 50% at 50% 50%);
     padding: 20rem 0;
     margin-top: -15rem;
+    @include respond(phone){
+        clip-path: ellipse(115% 50% at 50% 50%);
+        
+    }
 }
 
 .courses{
     background-color: $color-grey-light-1;
     padding: 25rem 0 10rem 0;
     margin-top: -20rem;
+    
 }
 
 .testimonials{

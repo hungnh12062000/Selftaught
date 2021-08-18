@@ -1,20 +1,50 @@
 .row-sourses{
     max-width: 1200px;
     margin: 0 11rem;
-    & .col:first-child{
-        margin-left: 2rem;
+
+    & .col{
+        @include respond(phone){
+            margin-left: 3rem;
+        }
+        @include respond(tab-port){
+            margin-left: 3rem;
+        }
+
+    }
+    
+    @include respond(phone){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 3rem;
+    }
+    @include respond(tab-port){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
     }
 }
 .card{
     perspective: 100rem; //hiệu ứng quay
     position: relative;
     height: 45rem;
+    @include respond(phone){
+        margin: 0 0 3rem 0;
+            
+    }
+    @include respond(tab-port){
+        margin: 0 0 5rem 5rem;
+            
+    }
 
+    
     &__side{
         position: absolute;
         top: 0;
         left: 0;
-
+        
         width: 90%;
         color: white;
         font-size: 2rem;
@@ -24,12 +54,14 @@
         box-shadow: 0 1.5rem 4rem rgba($color: $color-black, $alpha: .15);
         border-radius: 5rem;
         overflow: hidden;
+        
+        
 
         &--front{
             background-color: $color-white;
-
+            
         }
-
+        
         &--back{
             background-color: greenyellow;
             transform: rotateY(180deg);
@@ -62,6 +94,7 @@
         &--3{
             background-image: linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark), url('../../image/picture3.jpg');
         }
+
     }
 
     &__heading{
@@ -108,6 +141,12 @@
 
                 &:not(:last-child){
                     border-bottom: 1px solid #dbdbdb;
+                }
+
+                &{
+                    @include respond(tab-port){
+                        font-size: 2rem;
+                    }
                 }
             }
         }
