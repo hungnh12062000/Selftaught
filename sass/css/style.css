@@ -1787,8 +1787,8 @@ body {
 }
 @media (min-width: 1024px) {
   .navigation__button {
-    height: 7rem;
-    width: 7rem;
+    height: 6rem;
+    width: 6rem;
     top: 7rem;
     right: 7rem;
   }
