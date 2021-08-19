@@ -1822,8 +1822,8 @@ body {
   .navigation__background {
     height: 4rem;
     width: 4rem;
-    top: 9rem;
-    right: 15rem;
+    top: 8rem;
+    right: 8rem;
   }
 }
 .navigation__checkbox:checked ~ .navigation__background {
